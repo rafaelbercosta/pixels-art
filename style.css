@@ -1,0 +1,49 @@
+#title {
+    text-align: center;
+}
+#color-palette {
+    position: relative;
+    margin-left: 42%;
+    height: 10%;
+    width: 50%;
+
+}
+.color {
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.black {
+    background-color: black;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
+#pixel-board {
+    position: relative;
+    top: 20px;
+    left: 43%;
+    width: 1px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+   
+}
+.pixel { 
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+
+}
+#clear-board {
+    position: relative;
+    left: 47%;
+}
