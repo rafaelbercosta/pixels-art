@@ -8,6 +8,16 @@ function createPixel(q) {
     }
 }
 createPixel(25);
+function generateCollors(){
+const c = document.getElementsByClassName("color");
+  for(let i = 1; i < c.length; i++) {
+    let c1 = Math.round(Math.random()*225);
+    let c2 = Math.round(Math.random()*225);
+    let c3 = Math.round(Math.random()*225);
+    c[i].style.backgroundColor = "rgba("+c1+", "+c2+", "+c3+")"
+  }
+}
+generateCollors();
 
 const boardPixel = document.querySelectorAll('.pixel');
 const paletteColor = document.querySelectorAll('.color');
